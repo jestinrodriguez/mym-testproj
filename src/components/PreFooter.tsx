@@ -18,7 +18,7 @@ const PreFooter = () => {
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    const form = e.target;
+    const form = e.target as HTMLFormElement;
     const newErrors = {
       firstname: validateField("firstname", form.firstname.value),
       lastname: validateField("lastname", form.lastname.value),
@@ -33,7 +33,7 @@ const PreFooter = () => {
   };
   
   return (
-    <div className="flex flexscol items-center">
+    <div className="flex flex-col items-center">
       <div className="container">
           <div className="flex flex-col sm:flex-row justify-center items-center py-20">
             <p className="sm:mr-7 text-black alt-font font-medium pb-4 leading-6 sm:pb-0 xl:text-[20px] xl:leading-[26px]">We’d love to hear about your project</p>
