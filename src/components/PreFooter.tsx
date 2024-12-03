@@ -91,7 +91,7 @@ const PreFooter = () => {
             <div className="pre-footer-header">
               Subscribe to <em>a digital marketing blog</em>
             </div>
-            <div className="text-medium-gray font-" onSubmit={handleSubmit}>
+            <form className="text-medium-gray font-" onSubmit={handleSubmit}>
             <div>
               <Label htmlFor="firstname">First Name *</Label>
               <input
@@ -124,7 +124,7 @@ const PreFooter = () => {
                 Subscribe
               </Button>
             </div>
-          </div>
+          </form>
           </div>
           </div>
       </div>
