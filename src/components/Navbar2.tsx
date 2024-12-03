@@ -120,7 +120,7 @@ const Navbar2 = () => {
                 <ul className="flex flex-col items-center alt-font font-semibold">
                   {navItems.map((item, idx) => (
                     <>
-                      <li key={idx} className={`flex items-center gap-2 ${item.name === "Services" ? "relative" : ""}`}>
+                      <li key={`item-${idx}`} className={`flex items-center gap-2 ${item.name === "Services" ? "relative" : ""}`}>
                         <a
                           href={`${ROOT_URL}${item.path}`}
                           className="text-[22px] leading-[42px] lg:text-[36px] lg:leading-[70px] xl:text-[48px] xl:leading-[85px]"

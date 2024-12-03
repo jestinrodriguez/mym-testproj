@@ -1,11 +1,17 @@
 import { motion } from 'framer-motion';
 
+interface SlideUpProps {
+  children: React.ReactNode;
+  startY?: number;
+  duration?: number;
+  delay?: number;
+}
 const SlideUp = ({ 
   children, 
   startY = 50, 
   duration = 0.8, 
   delay = 0 
-}) => {
+}: SlideUpProps ) => {
   const animationVariants = {
     offscreen: { y: startY, opacity: 0 },
     onscreen: {

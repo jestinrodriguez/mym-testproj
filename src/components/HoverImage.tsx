@@ -1,4 +1,11 @@
-const HoverImage = ({ src, alt, title, description }) => {
+interface HoverImageProps {
+  src: string;
+  alt: string;
+  title: string;
+  description: string;
+}
+
+const HoverImage = ({ src, alt, title, description }: HoverImageProps) => {
   return (
     <div className="relative inline-block w-full h-full group overflow-hidden">
       <div className="transition-all duration-300 ease-in-out transform group-hover:-translate-y-20">
